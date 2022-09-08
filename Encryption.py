@@ -8,28 +8,21 @@ while run == True:
     Pos = 0
     print("------------")
     print("1.Encrypt\n2.Decrypt")
-    choice = input("")
-    print("Enter your message:")
+    choice = input("Enter your choice: ")
+    ec = list(input("Enter your message: "))
             
     if choice == "1":
-        ec = list(input(""))
-            
         while Pos < len(ec):
             charpos = Characters.index(ec[Pos])
             ec[Pos] = Key[charpos]
             Pos += 1
-        
-        print(*ec, sep='')
     
     if choice == "2":
-        dc = list(input(""))
-        
-        while Pos < len(dc):
-            charpos = Key.index(dc[Pos])
-            dc[Pos] = Characters[charpos]
+        while Pos < len(ec):
+            charpos = Key.index(ec[Pos])
+            ec[Pos] = Characters[charpos]
             Pos += 1
-
-        print(*dc, sep='')
+    print(*ec, sep='')
                 
     if choice == "quit":
         break

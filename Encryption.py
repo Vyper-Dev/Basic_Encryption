@@ -12,8 +12,6 @@ while run == True:
     print("Enter your message:")
             
     if choice == "1":
-        Run = True
-        Pos = 0
         ec = list(input(""))
             
         while Pos < len(ec):
@@ -24,8 +22,6 @@ while run == True:
         print(*ec, sep='')
     
     if choice == "2":
-        Run = True
-        Pos = 0
         dc = list(input(""))
         
         while Pos < len(dc):

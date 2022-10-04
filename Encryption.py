@@ -1,10 +1,7 @@
-run = True
-
 Characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
 Key = ["-", "!", "[", ":", "3", ";", ")", "$", "8", "&", "@", '"', "}", "{", "9", "0", "1", "4", "/", "5", "_", "?", "2", ",", "7", "]", "|"]
-#No Special Chars or Capital Letters
 
-while run == True:
+while True:
     Pos = 0
     print("------------")
     print("1.Encrypt\n2.Decrypt")
@@ -23,6 +20,3 @@ while run == True:
             ec[Pos] = Characters[charpos]
             Pos += 1
     print(*ec, sep='')
-                
-    if choice == "quit":
-        break
